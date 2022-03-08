@@ -1,11 +1,18 @@
 //playground styles
 @use 'playground';
+
+// reusable variables
+@use 'base';
+
+// Other styles
+@use 'hero';
+
 //Roboto font import
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 // Global Reset styles
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: base.$serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
