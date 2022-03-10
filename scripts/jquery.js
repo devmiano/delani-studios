@@ -11,7 +11,7 @@ $('.icon-text').on('click', function () {
   $('.text').toggle('slow');
 });
 
-// activity animation
+// activity animation for the activity cards
 $('.card1').on('click', function () {
   $('.content1').toggle('fast');
 });

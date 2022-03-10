@@ -1,0 +1,149 @@
+@use 'base';
+
+@mixin for-phone {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tab {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tab-lg {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-lg {
+  @media (max-width: 1500px) {
+    @content;
+  }
+}
+
+%work {
+  width: 100%;
+  height: auto;
+  max-width: 366px;
+  max-height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%title {
+  color: base.$gray;
+  background-color: base.$white;
+  padding: 1rem;
+  margin: 6rem 1rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.portfolio {
+  padding: 5rem;
+  text-align: center;
+
+  .title {
+    color: base.$gray;
+    padding-bottom: 2rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .works {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+
+    @include for-desktop {
+      grid-template-columns: auto auto auto;
+    }
+
+    @include for-tab-lg {
+      grid-template-columns: auto auto;
+    }
+
+    @include for-tab {
+      grid-template-columns: auto;
+    }
+
+    .work1 {
+      @extend %work;
+      background-image: url('/assets/portfolio/work1.jpg');
+
+      .title1 {
+        @extend %title;
+      }
+    }
+    .work2 {
+      @extend %work;
+      background-image: url('/assets/portfolio/work2.jpg');
+
+      .title2 {
+        @extend %title;
+      }
+    }
+    .work3 {
+      @extend %work;
+      background-image: url('/assets/portfolio/work3.jpg');
+
+      .title3 {
+        @extend %title;
+      }
+    }
+    .work4 {
+      @extend %work;
+      background-image: url('/assets/portfolio/work4.jpg');
+
+      .title4 {
+        @extend %title;
+      }
+    }
+    .work5 {
+      @extend %work;
+      background-image: url('/assets/portfolio/work5.jpg');
+
+      .title5 {
+        @extend %title;
+      }
+    }
+    .work6 {
+      @extend %work;
+      background-image: url('/assets/portfolio/work6.jpg');
+
+      .title6 {
+        @extend %title;
+      }
+    }
+    .work7 {
+      @extend %work;
+      background-image: url('/assets/portfolio/work7.jpg');
+
+      .title7 {
+        @extend %title;
+      }
+    }
+    .work8 {
+      @extend %work;
+      background-image: url('/assets/portfolio/work8.jpg');
+
+      .title8 {
+        @extend %title;
+      }
+    }
+  }
+}
