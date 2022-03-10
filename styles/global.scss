@@ -10,6 +10,7 @@
 @use 'services';
 @use 'activity';
 @use 'portfolio';
+@use 'contact';
 
 //Roboto font import
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
@@ -21,4 +22,5 @@
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
