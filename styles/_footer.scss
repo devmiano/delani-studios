@@ -1,0 +1,27 @@
+@use 'base';
+.footer {
+  text-align: center;
+  padding: 2rem 5rem;
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+
+    .icon {
+      margin: 1rem;
+    }
+  }
+
+  p {
+    color: base.$gray;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
