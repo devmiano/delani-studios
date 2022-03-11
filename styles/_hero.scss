@@ -17,7 +17,7 @@
     text-align: center;
 
     .hero-logo {
-      padding: 1rem;
+      margin: 1rem;
     }
 
     .hero-title {
@@ -25,20 +25,21 @@
       color: base.$white;
       font-weight: 500;
       font-size: 2.4rem;
-      letter-spacing: 1px;
-      line-height: 5rem;
+      line-height: 4rem;
     }
 
     .hero-text {
-      margin-top: -0.5rem;
+      margin-top: -0.2rem;
       text-transform: uppercase;
       color: base.$white;
+      font-weight: 400;
+      letter-spacing: 1px;
     }
   }
 
   .hero-icon {
     position: absolute;
-    bottom: 2rem;
+    bottom: 2.4rem;
     cursor: pointer;
   }
 }

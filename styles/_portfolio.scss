@@ -31,55 +31,63 @@
 }
 
 %work {
-  width: 100%;
-  height: auto;
-  max-width: 366px;
-  max-height: 300px;
+  width: 300px;
+  height: 250px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0.5rem;
+  cursor: pointer;
 }
 
 %title {
-  color: base.$gray;
-  background-color: base.$white;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem;
-  margin: 6rem 1rem;
-  font-weight: 400;
-  font-size: 1.1rem;
+
+  p {
+    width: 100%;
+    height: 100%;
+    border: 3px solid base.$white;
+    color: base.$white;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 }
 
 .portfolio {
-  padding: 5rem;
-  text-align: center;
+  padding: 4rem;
+
+  @include for-desktop {
+    padding: 3rem;
+  }
+
+  @include for-tab-lg {
+    padding: 2rem;
+  }
+
+  @include for-tab {
+    padding: 1rem;
+  }
 
   .title {
     color: base.$gray;
     padding-bottom: 2rem;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 2.4rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-align: center;
   }
   .works {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 1rem;
-
-    @include for-desktop {
-      grid-template-columns: auto auto auto;
-    }
-
-    @include for-tab-lg {
-      grid-template-columns: auto auto;
-    }
-
-    @include for-tab {
-      grid-template-columns: auto;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
     .work1 {
       @extend %work;
