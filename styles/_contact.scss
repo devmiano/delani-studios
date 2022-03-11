@@ -47,10 +47,10 @@
 
   .title {
     color: base.$white;
-    padding-bottom: 2rem;
-    font-weight: 700;
+    padding-bottom: 1rem;
+    font-weight: 500;
     font-size: 2.4rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
   }
@@ -98,6 +98,16 @@
       &::placeholder {
         color: base.$white;
       }
+    }
+    .button {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 1rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
     }
   }
 }

@@ -184,7 +184,7 @@
     </section>
     <section class="contact">
       <h1 class="title">contact us</h1>
-      <form class="form">
+      <form id="form_data" class="form">
         <div class="group">
           <input
             class="input"
@@ -205,8 +205,10 @@
           name="message"
           class="message"
           id="message"
+          type="text"
           placeholder="Your message here..."
         ></textarea>
+        <button type="button" onclick="addForm()" class="button">send</button>
       </form>
     </section>
     <section class="footer">
@@ -226,7 +228,7 @@
         2022
       </p>
     </section>
-    <script type="module" src="/scripts/main.js"></script>
+    <script src="/scripts/main.js"></script>
     <script type="module" src="/scripts/jquery.js"></script>
   </body>
 </html>
