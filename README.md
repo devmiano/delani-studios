@@ -12,7 +12,7 @@ This web application is a landing page for a studio that provides services in de
 
 ## Project Screenshot
 
-![screenshot](https://raw.githubusercontent.com/devmiano/akan/master/assets/bg/delani.png)
+![screenshot](https://raw.githubusercontent.com/devmiano/delani-studios/master/assets/bg/delani.png)
 
 ---
 
@@ -22,7 +22,7 @@ This web application is a landing page for a studio that provides services in de
 
 - `git clone https://github.com/devmiano/delani-studios.git`
 
-- `cd delani-studios` to entr the project folder
+- `cd delani-studios` to enter the project folder
 
 - `code .` or `atom .` based on the text editor you have.
 
